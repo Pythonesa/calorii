@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'SourGummy';
+  font-family: "SourGummy";
   src: url("./assets/fonts/SourGummy-VariableFont_wdth,wght.ttf");
 }
 
@@ -34,8 +34,7 @@ body {
   right: 0;
   bottom: 0;
   pointer-events: none;
-  background:
-    linear-gradient(to right, #fff3 1px, transparent 1px),
+  background: linear-gradient(to right, #fff3 1px, transparent 1px),
     linear-gradient(to bottom, #fff3 1px, transparent 1px);
   background-size: 40px 40px;
   background-repeat: repeat, repeat;
@@ -44,8 +43,10 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   background-color: var(--green);
+  border-bottom: 0.15rem solid var(--dark-violet);
 }
 
 #logo {
@@ -83,4 +84,88 @@ header {
 
 #reset:active {
   background-color: var(--pink);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 0.15rem solid var(--dark-violet);
+  border-radius: 5px;
+  background-color: var(--yellow);
+  color: var(--dark-violet);
+  font-family: "SourGummy", sans-serif;
+  font-size: 1.5rem;
+  width: 60rem;
+  margin: 0 1rem;
+  pointer-events: all;
+}
+
+.formline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formline label {
+  text-align: right;
+}
+
+#form input,
+#form select {
+  padding: 0.5rem;
+  border: 0.15rem solid var(--dark-violet);
+  border-radius: 5px;
+  background-color: var(--light-violet);
+  color: var(--dark-violet);
+  font-family: "SourGummy", sans-serif;
+  font-size: 1.5rem;
+}
+
+#form input {
+  width: 40rem;
+}
+
+#form select {
+  width: 41.2rem;
+}
+
+#form button {
+  padding: 0.5rem 1rem;
+  border: 0.15rem solid var(--dark-violet);
+  border-radius: 5px;
+  background-color: var(--violet);
+  color: var(--light-violet);
+  font-family: "SourGummy", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+#form button:hover {
+  background-color: var(--green);
+  color: var(--dark-violet);
+}
+
+#form button:active {
+  background-color: var(--pink);
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
