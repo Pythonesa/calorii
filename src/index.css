@@ -1,0 +1,36 @@
+:root {
+  --dark-violet: #4e4b93;
+  --violet: #a775ff;
+  --light-violet: #cec7f6;
+  --blue: #5491dd;
+  --lightblue: #31b4bd;
+  --green: #bedfbe;
+  --light-green: #c8e0dc;
+  --pink: #f8a0fa;
+  --yellow: #e8d1bb;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    var(--violet),
+    var(--blue),
+    var(--lightblue)
+  );
+  height: 100vh;
+  margin: 0;
+}
+
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(to right, #fff3 1px, transparent 1px),
+    linear-gradient(to bottom, #fff3 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-repeat: repeat, repeat;
+}
