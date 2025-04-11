@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SourGummy';
+  src: url("./assets/fonts/SourGummy-VariableFont_wdth,wght.ttf");
+}
+
 :root {
   --dark-violet: #4e4b93;
   --violet: #a775ff;
@@ -19,6 +24,7 @@ body {
   );
   height: 100vh;
   margin: 0;
+  font-family: "SourGummy", sans-serif;
 }
 
 .grid {
