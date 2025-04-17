@@ -146,8 +146,8 @@ main {
   padding: 0.5rem 1rem;
   border: 0.15rem solid var(--dark-violet);
   border-radius: 5px;
-  background-color: var(--violet);
-  color: var(--light-violet);
+  background-color: var();
+  color: var(--dark-violet);
   font-family: "SourGummy", sans-serif;
   font-size: 1.5rem;
   cursor: pointer;
@@ -155,12 +155,12 @@ main {
 }
 
 #form button:hover {
-  background-color: var(--green);
+  background-color: var(--pink);
   color: var(--dark-violet);
 }
 
 #form button:active {
-  background-color: var(--pink);
+  background-color: var(--violet);
 }
 
 #buttons {
@@ -168,4 +168,24 @@ main {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+@media screen and (max-width: 830px) {
+  form{
+    width: 100%;
+  }
+  #form {
+    width: 100%;
+    div {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  }
+  #form input {
+    width: 96%;
+  }
+  #form select {
+    width: 100%;
+  }
 }
